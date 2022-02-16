@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+
+
+    .navbar-light .navbar-nav .nav-link {
+      color: #ffffff;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: #3ec1d5;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      margin-right: 20px;
+
+    }
+
+    ul {
+      list-style: none;
+      text-align: left;
+
+    }
+
+    li {
+      display: inline-block;
+      padding-right: 10px;
+      position: relative;
+    }
+
+    a:hover {
+      color: #3ec1d5;
+    }
+
+    .dropdown {
+      display: none;
+      background-color: #343A40;
+      width: 130px;
+      height: 80px;
+      text-align: left;
+
+    }
+
+    li:hover .dropdown {
+      display: block;
+      position: absolute;
+    }
+
+    ul ul a {
+      color: #ffffff;
+    }
+
+    footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #343A40;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.footer-bottom{
+    background: rgb(64, 226, 205);
+  
+    width: 100%;
+    padding: 20px;
+   
+    text-align: center;
+}
+
+.footer-bottom{
+    background: rgb(32, 32, 32);
+   
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.footer-bottom p{
+   float: left;
+   font-size: 14px;
+   word-spacing: 2px;
+  
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+   
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footer-menu{
+  float: right;
+}
+
+.footer-menu ul{
+  display: flex;
+}
+
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+form { max-width:100%;   }
+
+.feedback-input {
+ 
+  color:#343A40;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 20px;
+  background-color: transparent;
+  border:2px solid #343A40;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #343A40; }
+
+textarea {
+  height: 100px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#343A40;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:"#27bcda"; }
+  </style>
+</head>
+
+<body style="background-color: #c4bfb6;">
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-light" id="mainNav">
+    <img src="img/logo.png" style="width: 28%;min-width: 300px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse align-items-center" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Etusivu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="otayhteytta.html">Ota yhteyttä</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="graafinensuunnittelu.html">Graafinen suunnittelu</a>
+        </li>
+        <li>
+          <a class="nav-link" href="valokuvaus.html">Valokuvaus</a> <!-- link that creates dropdown menu -->
+          <div class="dropdown">
+            <!-- dropdown menu list -->
+            <a href="elainkuvaus.html" style="margin-left: 10px;">Eläinkuvaus</a>
+            <a href="luontokuvaus.html" style="margin-left: 10px;">Luontokuvaus</a>
+            <a href="maisemakuvaus.html" style="margin-left: 10px;">Maisemakuvaus</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+<!-- contact section-->
+<section id="contact">
+  <div class="container mt-3 contactContent">
+    <br>    <div style="text-align: center"><img src="img/otayhteyttatumma.png" style="width: 13%;min-width: 200px;"> <br><br>
+      Hienoa, että olet löytänyt sivuilleni ja olet kiinnostunut tekemään yhteistyötä kanssani! 
+      <br>Tarvitsetko graafiselle ilmeellesi toteuttajaa tai valokuvausta? Etsitkö luotettavaa ja
+      <br> joustavaa tekijää yhteistyöhön? 
+      <br><br>Pyydä tarjous alla olevalla lomakkeella, laita tarjouspyyntö suoraan sähköpostiin tai soita. 
+ 
+    <br><br> <br> Yhteystiedot 
+     <br>Kaisa-Mari Salmi 
+     <br>040 1234567 
+     <br>Esimerkkikatu 2 70150 Kuopio</div><br>
+      <div class="row mt-4">
+          <div class="col-lg-6">
+              <div style="overflow:hidden;max-width:100%;width:100%;height:500px;">
+                <div id="googlemaps-display" style="height:100%; width:100%;">
+                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Kuopio&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div><a class="googlemap-enabler" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                <style>#googlemaps-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style>
+              </div>
+              <br>  
+          </div>
+          <div class="col-lg-6"><form><input name="name" type="text" class="feedback-input" placeholder="Yritys" /> 
+              <input name="name" type="text" class="feedback-input" placeholder="Nimi" />  
+                <input name="text" type="text" class="feedback-input" placeholder="Puhelin" />
+              <input name="email" type="text" class="feedback-input" placeholder="Sähköposti" />
+                <input name="text" type="text" class="feedback-input" placeholder="Aihe" />
+              <textarea name="text" class="feedback-input" placeholder="Viestisi"></textarea>
+              <input type="submit" value="Lähetä"/>
+            </form>
+          </div>
+
+      </div>
+  </div>
+</section> <br><br></div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+ 
+    <footer>
+      <div class="footer-content">
+        <!--add all information -->
+        <img src="img/otayhteytta.png" style="width: 13%;min-width: 150px;">
+        <p>Tutustu töihini lisää Facebookin, Pinterestin tai Instagramin kautta. Tarkemmat yhteystietoni löytyvät ota yhteyttä -sivulta, josta voit olla yhteydessä minuun vaivattomasti vaikkapa yhteydenottolomakkeen kautta.</p> 
+        <pre><p style="color: #ffffff"><img src="img/phone.png" style="width: 18px">   040 1234567      <img src="img/letter.png" style="width: 30px">    Kaisa-Mari.Salmi@edu.savonia.fi</p>
+<br><a href="index.html" style="color: transparent;"><img src="img/inst.png" style="width: 20px">       <img src="img/fb.png" style="width: 20px">      <img src="img/pin.png" style="width: 20px"></a>
+</pre>
+    </div>
+    <div class="footer-bottom">
+
+      <div class="footer-menu">
+        <ul class="f-menu">
+           <li><a href="index.html">Etusivu</a></li>
+           <li><a href="otayhteytta.html">Ota yhteyttä</a></li>
+           <li><a href="graafinensuunnittelu.html">Graafinen suunnittelu</a></li>
+           <li><a href="valokuvaus.html">Valokuvaus</a></li>
+        </ul>
+       </div>
+   </div>
+   
+    </footer>
+  </body>
+</html>
